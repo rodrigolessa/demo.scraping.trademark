@@ -1,0 +1,8 @@
+requests
+matplotlib
+numpy
+opencv-python
+Pillow
+mahotas
+scikit-image
+scipy
