@@ -10,7 +10,9 @@ import cv2
 # ap = argparse.ArgumentParser()
 # ap.add_argument("-q", "--query", required = True, help = "Path to the query image")
 # args = vars(ap.parse_args())
-imagePath = "dataset\\leaf\\0027.jpg"
+
+#imagePath = "dataset\\leaf\\0027.jpg"
+imagePath = "dataset\\segmented\\panda_0001.jpg"
 
 # Load the image, 
 image = cv2.imread(imagePath)
@@ -52,8 +54,6 @@ unknown = cv2.subtract(sure_bg, sure_fg)
 cv2.imshow('unknown', unknown)
 cv2.waitKey(0)
 
-
-
 # Marker labelling
 ret, markers = cv2.connectedComponents(sure_fg)
 
@@ -62,15 +62,7 @@ markers = markers+1
 
 # Now, mark the region of unknown with zero
 markers[unknown==255] = 0
-
-cv2.imshow('markers', image)
-cv2.waitKey(0)
-
-
 markers = cv2.watershed(image, markers)
-
-cv2.imshow('markers', image)
-cv2.waitKey(0)
 
 image[markers == -1] = [255,0,0]
 
