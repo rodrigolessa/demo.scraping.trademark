@@ -1,8 +1,8 @@
 requests
 matplotlib
 numpy
-opencv-python
+opencv-contrib-python
 Pillow
-mahotas
-scikit-image
 scipy
+scikit-image
+mahotas
