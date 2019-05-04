@@ -34,6 +34,14 @@ GROUP_SIZE = 250
 #https://gru.inpi.gov.br/pePI/servlet/LoginController?action=login
 #https://gru.inpi.gov.br/pePI/jsp/marcas/Pesquisa_classe_basica.jsp
 #https://gru.inpi.gov.br/pePI/jsp/marcas/Pesquisa_num_processo.jsp
+
+#JSESSIONID
+#BA8335BFAFA605D747B08CD5CCEBDC98
+
+#Request URL: https://gru.inpi.gov.br/pePI/servlet/MarcasServletController
+#Request Method: POST
+
+
  
 # set the endpoint API URL
 URL = "https://api.cognitive.microsoft.com/bing/v7.0/images/search"
